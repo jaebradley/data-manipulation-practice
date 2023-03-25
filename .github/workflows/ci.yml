@@ -4,4 +4,8 @@ jobs:
   tests:
     runs-on: macos-latest
     steps:
-      - run: tests/awk.sh $(pwd)/awk
+      - uses: actions/checkout@v2
+        with:
+          ref: ${{ github.ref }}
+      - name: Awk tests
+        run: bash tests/awk.sh $(pwd)/awk
