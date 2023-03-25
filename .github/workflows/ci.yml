@@ -1,0 +1,11 @@
+name: CI
+on: [push]
+jobs:
+  tests:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: ${{ github.ref }}
+      - name: Awk tests
+        run: bash tests/awk.sh $(pwd)/awk
