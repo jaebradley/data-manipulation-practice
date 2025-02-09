@@ -1,2 +1,2 @@
-# data-manipulation-practice
-Data manipulation practice using tools like awk, jq, and sed
+# Commands Examples
+Examples using commands like awk, jq, sed, and ps.
